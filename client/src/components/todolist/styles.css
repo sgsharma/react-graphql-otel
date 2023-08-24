@@ -1,0 +1,38 @@
+.TodoList {
+  text-align: center;
+}
+
+.TodoList__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.TodoList__item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+.Card {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.Card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Card__title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.Card__description {
+  font-size: 14px;
+  color: #555;
+}

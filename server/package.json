@@ -13,7 +13,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.17",
     "apollo-server-express": "^3.12.0",
     "class-validator": "^0.14.0",
     "create-react-app": "^5.0.1",
