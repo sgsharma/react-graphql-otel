@@ -1,7 +1,8 @@
 import 'reflect-metadata'
 import { ApolloServer } from 'apollo-server-express'
-import * as Express from 'express'
+import Express from 'express'
 import { buildSchema } from 'type-graphql'
+import cors from 'cors'
 
 import { TodoResolver } from './resolvers/todoResolver'
 
@@ -19,6 +20,9 @@ async function main() {
     schema,
   })
   
+  // Enable CORS for all routes
+  app.use(cors());
+
   await server.start()
   server.applyMiddleware({ app })
 

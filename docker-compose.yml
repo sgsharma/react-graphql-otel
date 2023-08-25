@@ -1,0 +1,12 @@
+version: '3'
+services:
+  client:
+    build:
+      context: ./client
+    ports:
+      - "80:80" # Assuming the client runs on port 3000 inside the container
+  server:
+    build:
+      context: ./server
+    ports:
+      - "4000:4000" # Assuming the server runs on port 4000 inside the container
