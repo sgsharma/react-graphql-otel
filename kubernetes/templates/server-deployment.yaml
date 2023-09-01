@@ -29,7 +29,8 @@ spec:
         - env:
             - name: HONEYCOMB_API_KEY
               value: FzKjzeQCaqicf1gIng8ffp
-          image: server
+          image: react-graphql-otel-server
+          imagePullPolicy: Never
           name: server
           ports:
             - containerPort: 4000
